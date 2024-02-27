@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronusgram - Melhore seu jeito de estudar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="Body1">
+    <header>
+        <div class="container">
+            <h1 class="logo">Chronusgram</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Produtos.html">Produtos</a></li>
+                    <li><a href="Contatos.html">Contatos</a></li>
+                    <li><a href="Nos.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="main-section">
+        <div class="container">
+            <div class="text-box">
+                <h2>MELHORE SEU JEITO DE ESTUDAR PARA UMA FORMA FÁCIL E OTIMIZADA COM O CHRONUSGRAM </h2>
+                <p>Preencha seu email para receber um código de teste para usar nosso aplicativo</p>
+                <form action="#" method="POST" class="subscribe-form" id="emailForm">
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    <button type="submit">Receber código de teste</button>
+                </form>
+                <p id="mensagem" class="mensagem"></p> <!-- Mensagem de código enviado -->
+            </div>
+            <div class="phone-image">
+                <img src="App.correto.png" alt="Phone Image">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("emailForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            document.getElementById("mensagem").innerText = "Código enviado"; // Exibe a mensagem
+            setTimeout(function() {
+                document.getElementById("mensagem").innerText = ""; // Remove a mensagem após 5 segundos
+            }, 5000); // 5000 milissegundos = 5 segundos
+        });
+    </script>
+</body>
+</html>
+
+

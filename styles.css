@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to left, #8A2BE2, #FF69B4);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    color: #fff;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+}
+.logo{
+    margin:0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.main-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #FF1493;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #FF69B4;
+}
+
+.phone-image {
+    width: 1000px;
+    margin-left: 20px;
+}
+
+.phone-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px rgba(10, 37, 64, 0.35);
+    
+}
